@@ -20,6 +20,15 @@ body {
     
 }
 
+h1 {
+    font-size: 3rem;
+    line-height: 105%;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
 header,
 .hero-section,
 .courses-section,
@@ -74,7 +83,7 @@ header nav a:nth-child(2n-1) {
     position: relative;
 }
 
-.hero.section .button::after {
+.hero-section .button::after {
     content: '';
     background: url(img/arrow-curve.svg);
     position: absolute;
@@ -110,15 +119,43 @@ header nav a:nth-child(2n-1) {
     line-height: 105%;
 }
 
-h1 {
-    font-size: 3rem;
-    line-height: 105%;
+.courses-section {
+    padding-bottom: 8rem;
 }
 
-h2 {
-    font-size: 2.5rem;
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
 }
 
+.card {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+}
+
+.card:nth-child(2n) {
+    align-self: end;
+    background-color: var(--color-secundary);
+}
+
+.card strong {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card a {
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+}
 
 
 .mt-1 {
